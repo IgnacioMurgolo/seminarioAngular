@@ -29,3 +29,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 =======
 # carroCompras-Angular
 >>>>>>> f21d72e62326a9dd5e51f980a2fafa72873e35d8
+# seminarioAngular
