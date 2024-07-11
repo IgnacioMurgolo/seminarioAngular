@@ -24,10 +24,8 @@
             @if (accesorio.oferta == true) {
             <td><span class="badge text-bg-success">EN OFERTA</span></td>
             }@else {<td><span></span></td>}
-            <td><button class="btn btn-primary btn-sm" (click)="masCantidad(accesorio)">+</button>
-                <input  class="smallInput" type="number" [(ngModel)]="accesorio.cantidad"
-                (focusout)="cambiarCantidad(accesorio)" >
-                <button class="btn btn-primary btn-sm" (click)="menosCantidad(accesorio)">-</button>
+            <td>
+                <app-input-integer [(cantidad)]="accesorio.cantidad" [max]="accesorio.stock"></app-input-integer>
             </td>
         </tr>
         }

@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { Accesorio } from './Accesorio';
 import { CurrencyPipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { InputIntegerComponent } from "../input-integer/input-integer.component";
 
 @Component({
   selector: 'app-accesorios-list',
   standalone: true,
-  imports: [CurrencyPipe, FormsModule],
+  imports: [CurrencyPipe, FormsModule, InputIntegerComponent],
   templateUrl: './accesorios-list.component.html',
   styleUrl: './accesorios-list.component.scss'
 })
@@ -21,7 +22,7 @@ export class AccesoriosListComponent {
       precio: 58000,
       stock: 6,
       oferta: false,
-      cantidad: 0,
+      cantidad: 5,
     },
     {
       imagen: "assets/img/guante-4stroke.jpeg",
@@ -30,7 +31,7 @@ export class AccesoriosListComponent {
       precio: 120000,
       stock: 5,
       oferta: true,
-      cantidad: 0,
+      cantidad: 7,
     },
     {
       imagen: "assets/img/guante-4stroke.jpeg",
@@ -42,23 +43,5 @@ export class AccesoriosListComponent {
       cantidad: 0,
     },
   ]
-
-  masCantidad(accesorio: Accesorio): void {
-    if (accesorio.cantidad < accesorio.stock && accesorio.stock != 0)
-      accesorio.cantidad++;
-  }
-
-  menosCantidad(accesorio: Accesorio): void {
-    if (accesorio.cantidad > 0)
-      accesorio.cantidad--;
-  }
-
-  cambiarCantidad(accesorio: Accesorio): void {
-    if (accesorio.cantidad > accesorio.stock) {
-      alert("No hay suficientes en stock");
-    }
-    accesorio.cantidad = 0;
-  }
-
 
 } 
