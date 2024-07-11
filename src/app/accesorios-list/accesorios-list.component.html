@@ -1,26 +1,33 @@
-<table>
-    <thead>
+<table class="table table-striped text-center">
+    <thead class="table-dark">
         <tr>
-            <th>Imagen</th>
+            <th></th>
             <th>Descripcion</th>
             <th>Talle</th>
             <th>Precio</th>
-            <th></th>
+            <th>Stock</th>
+            <th>Oferta</th>
+            <th>Compra</th>
         </tr>
     </thead>
     <tbody>
         @for (accesorio of accesorios; track accesorio.descripcion) {
         <tr>
-            <td><img [src]="accesorio.imagen" [alt]="accesorio.descripcion" /></td>
+            <td><img width="100" class="img-thumbnail " [src]="accesorio.imagen" [alt]="accesorio.descripcion" /></td>
             <td>{{accesorio.descripcion}}</td>
             <td>{{accesorio.marca}}</td>
             <td>{{accesorio.precio | currency}}</td>
             @if (accesorio.stock == 0) {
             <td><span class="badge text-bg-danger">SIN STOCK</span></td>
-            }
+            }@else {<td><span></span></td>}
             @if (accesorio.oferta == true) {
             <td><span class="badge text-bg-success">EN OFERTA</span></td>
-            }
+            }@else {<td><span></span></td>}
+            <td><button class="btn btn-primary btn-sm" (click)="masCantidad(accesorio)">+</button>
+                <input  class="smallInput" type="number" [(ngModel)]="accesorio.cantidad"
+                (focusout)="cambiarCantidad(accesorio)" >
+                <button class="btn btn-primary btn-sm" (click)="menosCantidad(accesorio)">-</button>
+            </td>
         </tr>
         }
     </tbody>
