@@ -7,10 +7,8 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class AccesoriosCartService {
 
-
   private _listaCompras: Accesorio[] = [];
   listaCompras: BehaviorSubject <Accesorio[]>= new BehaviorSubject(this._listaCompras);
-
 
   constructor() { }
 

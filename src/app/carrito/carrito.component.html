@@ -4,8 +4,9 @@
     <th>Subtotal</th>
     @for(a of listaCompras$ | async ; track a.descripcion){
     <tr>
-        <td>{{a.descripcion}} = {{a.cantidad}}</td>
+        <td>{{a.descripcion}} - Cantidad = {{a.cantidad}}</td>
         <td>{{a.cantidad*a.precio}}</td>
+
     </tr>
     }
 </table>

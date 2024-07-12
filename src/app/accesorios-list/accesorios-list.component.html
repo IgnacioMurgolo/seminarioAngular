@@ -8,7 +8,7 @@
             <th>Precio</th>
             <th>Stock</th>
             <th>Oferta</th>
-            <th>Compra</th>
+            <th>Cantidad</th>
         </tr>
     </thead>
     <tbody>
@@ -26,7 +26,7 @@
             }@else {<td><span></span></td>}
             <td>
                 <app-input-integer [(cantidad)]="accesorio.cantidad" [max]="accesorio.stock"></app-input-integer>
-                <button class="badge text-bg-warning" (click)="agregarAlCarrito(accesorio)">Comprar</button>
+                <button class="badge text-bg-warning btn-comprar" (click)="agregarAlCarrito(accesorio)">Comprar</button>
             </td>
         </tr>
         }
