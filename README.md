@@ -25,4 +25,4 @@ Email: ignaciomurgolo@gmail.com
 
 Sede TUDAI: Tandil.
 
-StackBlitz: [Enlace_Editable_StackBlitz](https://stackblitz.com/~/github.com/IgnacioMurgolo/seminarioAngular)
+StackBlitz: [Enlace_StackBlitz](https://stackblitz.com/~/github.com/IgnacioMurgolo/seminarioAngular)
