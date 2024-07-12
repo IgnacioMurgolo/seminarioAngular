@@ -1,32 +1,28 @@
 
 # MotoAccesorios
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
+La tematica abordada en el presente trabajo es sobre un carro de compras para una tienda de equipamientos para motos denominada Moto Accesorios.
 
-## Development server
+Componentes y servicios creados
+Para el desarrollo de este carrito de compras de la tienda se crearon los siguientes componentes:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+accesorios-list: donde se muestran los productos disponibles a la venta como descripcion acerca de cada uno de ellos.
+accesorios-about: seccion breve donde se muestran las posibles formas de contacto de la tienda, sea via redes sociales o telefono.
+carrito: es el componente donde se van guardando las elecciones por parte del cliente.
+accesorios-tienda: es la seccion que engloba toda la parte de la venta. Es el componente padre de accesorios-list y carrito.
+input-integer: este componente se creo para ser utilizado dentro de accesorios-list para registrar las cantidades de productos a comprar.
+accesorios-cart.service: es el servicio utilizado por el carro de compras para guardar las elecciones del cliente y colocarlas en el carrito.
+accesorios-data.service: es el servicio utilizado para traer los productos desde la API.
 
-## Code scaffolding
+Datos del alumno
+Apellido: Murgolo.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Nombre: Ignacio.
 
-## Build
+DNI: 35562232.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Email: ignaciomurgolo@gmail.com
 
-## Running unit tests
+Sede TUDAI: Tandil.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-=======
-# carroCompras-Angular
->>>>>>> f21d72e62326a9dd5e51f980a2fafa72873e35d8
-# seminarioAngular
+StackBlitz: [Enlace_Editable_StackBlitz](https://stackblitz.com/~/github.com/IgnacioMurgolo/seminarioAngular)
